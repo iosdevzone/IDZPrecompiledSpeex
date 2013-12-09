@@ -22,7 +22,7 @@ git clone https://github.com/iosdevzone/IDZPrecompiledSpeex
 mkdir -p IDZBuildRoot
 export IDZ_BUILD_ROOT=`pwd`/IDZBuildRoot
 . IDZPrecompiledOgg/libogg_build.bash
-. IDZPrecompiledVorbis/speex_build.bash
+. IDZPrecompiledSpeex/speex_build.bash
 ```
 
 Licenses
