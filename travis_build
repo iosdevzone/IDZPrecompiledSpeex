@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ..
 git clone https://github.com/iosdevzone/IDZBuild
 export PATH=`pwd`/IDZBuild:$PATH
