@@ -2,11 +2,11 @@ IDZ_SPEEX_VERSION=1.2rc1
 IDZ_OGG_VERSION=1.3.1
 IDZ_IOS_SDK_VERSION=8.0
 
-pushd $IDZ_BUILD_ROOT
+pushd $IDZ_BUILD_ROOT 
 echo IDZ_BUILD_ROOT is $IDZ_BUILD_ROOT
 
 mkdir -p libspeex/$IDZ_SPEEX_VERSION
-pushd libspeex/$IDZ_SPEEX_VERSION
+pushd libspeex/$IDZ_SPEEX_VERSION 
 
 curl -O http://downloads.xiph.org/releases/speex/speex-$IDZ_SPEEX_VERSION.tar.gz
 tar xvfz speex-$IDZ_SPEEX_VERSION.tar.gz
@@ -51,3 +51,5 @@ popd
 idz_fw Speex libspeexall.a install-iPhoneSimulator-i386/include/speex
 
 popd
+echo "Build complete in directory `pwd`"
+
