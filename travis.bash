@@ -1,0 +1,9 @@
+cd ..
+git clone https://github.com/iosdevzone/IDZBuild
+export PATH=`pwd`/IDZBuild:$PATH
+git clone https://github.com/iosdevzone/IDZPrecompiledOgg
+git clone https://github.com/iosdevzone/IDZPrecompiledSpeex
+mkdir -p IDZBuildRoot
+export IDZ_BUILD_ROOT=`pwd`/IDZBuildRoot
+. IDZPrecompiledOgg/libogg_build.bash
+. IDZPrecompiledSpeex/speex_build.bash
