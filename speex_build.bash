@@ -1,6 +1,6 @@
-IDZ_SPEEX_VERSION=1.2rc1
+IDZ_SPEEX_VERSION=1.2.0
 IDZ_OGG_VERSION=1.3.1
-IDZ_IOS_SDK_VERSION=8.0
+IDZ_IOS_SDK_VERSION=`xcrun --sdk iphoneos --show-sdk-version`
 
 pushd $IDZ_BUILD_ROOT 
 echo IDZ_BUILD_ROOT is $IDZ_BUILD_ROOT
@@ -8,7 +8,7 @@ echo IDZ_BUILD_ROOT is $IDZ_BUILD_ROOT
 mkdir -p libspeex/$IDZ_SPEEX_VERSION
 pushd libspeex/$IDZ_SPEEX_VERSION 
 
-curl -O http://downloads.xiph.org/releases/speex/speex-$IDZ_SPEEX_VERSION.tar.gz
+curl -O https://ftp.osuosl.org/pub/xiph/releases/speex/speex-$IDZ_SPEEX_VERSION.tar.gz
 tar xvfz speex-$IDZ_SPEEX_VERSION.tar.gz
 
 IDZ_LIBDIR=speex-$IDZ_SPEEX_VERSION
