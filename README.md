@@ -1,7 +1,7 @@
 IDZPrecompiledSpeex
 ===================
 
-Speex 1.2rc1 compiled for iOS armv7, armv7, arm64, i386, x86_64
+Speex 1.2.0 compiled for iOS armv7, armv7, arm64, i386, x86_64 using Xcode 11, now with added bitcode!
 
 The original source code can be downloaded from http://xiph.org/downloads 
 
